@@ -91,5 +91,6 @@
     ],
     "peacock.surpriseMeOnStartup": true,
     "workbench.settings.editor": "json",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "workbench.list.keyboardNavigation": "simple"
   }
