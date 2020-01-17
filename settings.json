@@ -12,7 +12,7 @@
     "powermode.presets": "flames",
     "powermode.explosionFrequency": 10,
     "powermode.enableShake": false,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "explorer.confirmDragAndDrop": false,
@@ -92,5 +92,9 @@
     "peacock.surpriseMeOnStartup": true,
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
-    "workbench.list.keyboardNavigation": "simple"
+    "workbench.list.keyboardNavigation": "simple",
+    "editor.maxTokenizationLineLength": 100000,
+    "cSpell.userWords": [
+        "headshot"
+    ]
   }
