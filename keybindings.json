@@ -221,22 +221,6 @@
   },
   {
     "key": "ctrl+cmd+down",
-    "command": "cursorPageDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "pagedown",
-    "command": "-cursorPageDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+cmd+up",
-    "command": "cursorPageUp",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "pageup",
-    "command": "-cursorPageUp",
-    "when": "textInputFocus"
+    "command": "workbench.action.moveEditorToBelowGroup"
   }
 ]
