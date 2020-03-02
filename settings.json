@@ -5,6 +5,7 @@
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "files.autoSave": "onFocusChange",
+    "files.exclude": {},
     "explorer.autoReveal": false,
     "ruby.intellisense": "rubyLocate",
     "ruby.format": "rubocop",
