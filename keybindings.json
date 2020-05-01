@@ -220,6 +220,15 @@
     "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
   },
   {
+    "key": "shift+cmd+r",
+    "command": "workbench.view.remote"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
     "key": "ctrl+cmd+down",
     "command": "workbench.action.moveEditorToBelowGroup",
     "when": "textInputFocus"

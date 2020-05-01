@@ -1,43 +1,7 @@
 {
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
+    "workbench.colorTheme": "One Monokai",
     "workbench.editor.enablePreview": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-        "**/.git": false
-    },
-    "explorer.autoReveal": false,
-    "ruby.intellisense": "rubyLocate",
-    "ruby.format": "rubocop",
-    "powermode.enabled": true,
-    "powermode.presets": "flames",
-    "powermode.explosionFrequency": 10,
-    "powermode.enableShake": false,
-    "window.zoomLevel": 0,
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "breadcrumbs.enabled": true,
-    "explorer.confirmDelete": false,
-    "editor.fontFamily": "Comic Sans, Monaco, 'Courier New', monospace",
-    "editor.mouseWheelZoom": true,
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.explorerKind": "external",
-    "terminal.integrated.scrollback": 1e+28,
-    "workbench.colorTheme": "One Monokai",
-    "workbench.editor.showTabs": true,
-    "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "workbench.iconTheme": "material-icon-theme",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "vsicons.projectDetection.autoReload": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.suggestSelection": "first",
-    "python.jediEnabled": false,
     "peacock.favoriteColors": [
         {
             "name": "Angular Red",
@@ -92,12 +56,50 @@
             "value": "#42b883"
         }
     ],
+    "files.autoSave": "onFocusChange",
+    "explorer.autoReveal": false,
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.explosionFrequency": 10,
+    "powermode.enableShake": false,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "breadcrumbs.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "Monaco, 'Courier New', monospace",
+    "editor.mouseWheelZoom": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.scrollback": 1e+28,
+    "workbench.editor.showTabs": true,
     "peacock.surpriseMeOnStartup": true,
     "workbench.settings.editor": "json",
-    "workbench.sideBar.location": "right",
     "workbench.list.keyboardNavigation": "simple",
-    "editor.maxTokenizationLineLength": 100000,
-    "cSpell.userWords": [
-        "headshot"
-    ]
-  }
+    "workbench.sideBar.location": "right",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "files.associations": {
+        "*.jinja": "sql",
+        "*.swigql": "sql"
+    },
+    "[tsv]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false
+    },
+    "[sql]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "oneDarkPro.vivid": true,
+    "oneDarkPro.bold": true,
+    "files.exclude": {
+        "**/.git": false
+    }
+}
