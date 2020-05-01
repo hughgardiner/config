@@ -1,0 +1,35 @@
+prompt_order = [
+  "time",
+  "username",
+  "directory",
+  "git_branch",
+  "line_break",
+  "character"
+]
+[username]
+show_always = true
+[character]
+symbol = "🐵"
+error_symbol = "🙈"
+use_symbol_for_status = true
+[time]
+disabled = false
+format = "⏰ [%T]"
+utc_time_offset = "-5"
+[package]
+disabled = true
+[nodejs]
+disabled = true
+[aws]
+disabled = true
+[git_status]
+disabled = true
+[git_branch]
+symbol = ""
+truncation_symbol = ""
+[ruby]
+disabled = true
+[python]
+disabled = true
+[java]
+disabled = true
