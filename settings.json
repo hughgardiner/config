@@ -1,7 +1,45 @@
 {
-  "workbench.colorTheme": "One Monokai",
-  "workbench.editor.enablePreview": true,
-  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "[sql]": {
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true
+  },
+  "[tsv]": {
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": false
+  },
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "Code New Roman",
+  "editor.fontSize": 14,
+  "editor.maxTokenizationLineLength": 100000,
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.jinja": "sql",
+    "*.swigql": "sql"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -56,50 +94,24 @@
       "value": "#42b883"
     }
   ],
-  "files.autoSave": "onFocusChange",
-  "explorer.autoReveal": false,
-  "powermode.enabled": true,
-  "powermode.presets": "flames",
-  "powermode.explosionFrequency": 10,
-  "powermode.enableShake": false,
-  "window.zoomLevel": 0,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "breadcrumbs.enabled": true,
-  "explorer.confirmDelete": false,
-  "editor.fontFamily": "Monaco, 'Courier New', monospace",
-  "editor.mouseWheelZoom": true,
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.explorerKind": "external",
-  "terminal.integrated.scrollback": 1e+28,
-  "workbench.editor.showTabs": true,
   "peacock.surpriseMeOnStartup": true,
-  "workbench.settings.editor": "json",
-  "workbench.list.keyboardNavigation": "simple",
-  "workbench.sideBar.location": "right",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "files.associations": {
-    "*.jinja": "sql",
-    "*.swigql": "sql"
-  },
-  "[tsv]": {
-    "editor.tabSize": 4,
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": false
-  },
-  "[sql]": {
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true
-  },
+  "powermode.enableShake": false,
+  "powermode.enabled": true,
+  "powermode.explosionFrequency": 10,
+  "powermode.presets": "flames",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.scrollback": 1e+28,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.projectDetection.autoReload": true,
+  "window.zoomLevel": -1,
+  "workbench.colorTheme": "One Monokai",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": true,
   "workbench.iconTheme": "material-icon-theme",
-  "oneDarkPro.vivid": true,
-  "oneDarkPro.bold": true,
-  "files.exclude": {
-    "**/.git": false
-  }
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.settings.editor": "json",
+  "workbench.sideBar.location": "right"
 }
