@@ -142,7 +142,7 @@
     "command": "-workbench.action.nextEditor"
   },
   {
-    "key": "alt+cmd+left",
+    "key": "cmd+k alt+cmd+left",
     "command": "workbench.action.previousEditor"
   },
   {
@@ -150,7 +150,7 @@
     "command": "-workbench.action.previousEditor"
   },
   {
-    "key": "alt+cmd+right",
+    "key": "cmd+k alt+cmd+right",
     "command": "workbench.action.nextEditor"
   },
   {
@@ -252,5 +252,26 @@
     "key": "pageup",
     "command": "-cursorPageUp",
     "when": "textInputFocus"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+right",
+    "command": "-workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+left",
+    "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.copyLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
