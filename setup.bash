@@ -8,7 +8,7 @@
 # ./setup.bash
 
 # Homebrew Install
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Application Install
 brew install --cask google-chrome
@@ -21,28 +21,28 @@ brew install --cask hammerspoon
 brew install --cask spotify
 brew install --cask dbeaver-community
 brew install slack
-brew install starship
+curl -fsSL https://starship.rs/install.sh | bash
 brew install node
 
 # Setup ZSH
 cp base.zshrc ~/.zshrc
 
 # Setup Hammerspoon
-cp init.lua ~/.hammerspoon
+cp init.lua ~/.hammerspoon/
 
 # Setup Starship
 mkdir ~/.config
-cp starship.toml ~/.config
+cp starship.toml ~/.config/
 
 # Setup Karabiner
-cp karabiner.json ~/.config/karabiner
+cp karabiner.json ~/.config/karabiner/
 
 # Setup iTerm
-cp com.googlecode.iterm2.plist ~/Library/Preferences
+cp com.googlecode.iterm2.plist ~/Library/Preferences/
 
 # Setup VSCode
-cp settings.json ~/Library/Application\ Support/Code/User
-cp keybindings.json ~/Library/Application\ Support/Code/User
+cp settings.json ~/Library/Application\ Support/Code/User/
+cp keybindings.json ~/Library/Application\ Support/Code/User/
 
 code --install-extension aaronthomas.vscode-snazzy-operator
 code --install-extension apollographql.vscode-apollo
