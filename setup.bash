@@ -1,19 +1,40 @@
+#!/bin/bash
+
 # Homebrew Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Application Install
-brew cask install google-chrome
-brew cask install visual-studio-code
-brew cask install iterm2
-brew cask install figma
-brew cask install docker
-brew cask install karabiner-elements
-brew cask install hammerspoon
-brew cask install spotify
-brew cask install dbeaver-community
+brew install --cask google-chrome
+brew install --cask visual-studio-code
+brew install --cask iterm2
+brew install --cask figma
+brew install --cask docker
+brew install --cask karabiner-elements
+brew install --cask hammerspoon
+brew install --cask spotify
+brew install --cask dbeaver-community
+brew install starship
 brew install node
 
-# VS Code Extensions
+# Retrieve Dev Configurations
+mkdir ~/dev && cd ~/dev
+git clone git@github.com:hughgardiner/VsCodeConfig.git
+cd VsCodeConfig
+
+# Setup ZSH
+cp base.zshrc ~/.zshrc
+
+# Setup Hammerspoon
+cp init.lua ~/.hammerspoon
+
+# Setup Starship
+mkdir ~/.config
+cp starship.toml ~/.config
+
+# Setup VSCode
+cp settings.json ~/Library/Application\ Support/Code/User
+cp keybindings.json ~/Library/Application\ Support/Code/User
+
 code --install-extension aaronthomas.vscode-snazzy-operator
 code --install-extension apollographql.vscode-apollo
 code --install-extension arcticicestudio.nord-visual-studio-code
