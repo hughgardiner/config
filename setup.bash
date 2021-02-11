@@ -1,7 +1,14 @@
 #!/bin/bash
 
+# Run on new machine to begin setup
+# mkdir ~/dev && cd ~/dev
+# git clone https://github.com/hughgardiner/VsCodeConfig.git
+# cd VsCodeConfig
+# chmod +x setup.bash
+# ./setup.bash
+
 # Homebrew Install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Application Install
 brew install --cask google-chrome
@@ -16,11 +23,6 @@ brew install --cask dbeaver-community
 brew install starship
 brew install node
 
-# Retrieve Dev Configurations
-mkdir ~/dev && cd ~/dev
-git clone git@github.com:hughgardiner/VsCodeConfig.git
-cd VsCodeConfig
-
 # Setup ZSH
 cp base.zshrc ~/.zshrc
 
@@ -33,6 +35,9 @@ cp starship.toml ~/.config
 
 # Setup Karabiner
 cp karabiner.json ~/.config/karabiner
+
+# Setup iTerm
+cp com.googlecode.iterm2.plist ~/Library/Preferences
 
 # Setup VSCode
 cp settings.json ~/Library/Application\ Support/Code/User
