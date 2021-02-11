@@ -31,6 +31,9 @@ cp init.lua ~/.hammerspoon
 mkdir ~/.config
 cp starship.toml ~/.config
 
+# Setup Karabiner
+cp karabiner.json ~/.config/karabiner
+
 # Setup VSCode
 cp settings.json ~/Library/Application\ Support/Code/User
 cp keybindings.json ~/Library/Application\ Support/Code/User
