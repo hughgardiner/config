@@ -1,35 +1,51 @@
-prompt_order = [
-  "time",
-  "username",
-  "directory",
-  "git_branch",
-  "line_break",
-  "character"
-]
+format = """\
+  $time\
+  $username\
+  $directory\
+  $git_branch\
+  $line_break\
+  $character\
+"""
+
 [username]
 show_always = true
+
 [character]
 symbol = "🐵"
 error_symbol = "🙈"
 use_symbol_for_status = true
+
 [time]
 disabled = false
-format = "⏰ [%T]"
+format = '⏰ [\[$time\]]($style) '
+time_format = "%T"
 utc_time_offset = "-5"
+style = "green"
+
+[cmd_duration]
+style = "bold red"
+
 [package]
 disabled = true
+
 [nodejs]
 disabled = true
+
 [aws]
 disabled = true
+
 [git_status]
 disabled = true
+
 [git_branch]
 symbol = ""
 truncation_symbol = ""
+
 [ruby]
 disabled = true
+
 [python]
 disabled = true
+
 [java]
 disabled = true
