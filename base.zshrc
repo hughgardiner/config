@@ -28,3 +28,5 @@ alias dse='docker stop $(docker ps -q -f "name=firefox" -f "name=selenium" -f "n
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
+
+eval "$(starship init zsh)"

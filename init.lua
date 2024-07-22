@@ -5,7 +5,8 @@ end)
 hs.notify.new({title="Hammerspoon", informativeText="Config loaded"}):send()
 
 local applicationHotkeys = {
-  c = 'Google Chrome',
+  a = 'Arc',
+  c = 'ChatGPT',
   d = 'Calendar',
   f = 'Finder',
   g = 'DataGrip',

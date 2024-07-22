@@ -19,8 +19,11 @@ brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask spotify
 
+# Starship Install
+curl -sS https://starship.rs/install.sh | sh
+
 # Setup ZSH
-# cp base.zshrc ~/.zshrc
+cp base.zshrc ~/.zshrc
 
 # Setup Hammerspoon
 mkdir ~/.hammerspoon
@@ -30,4 +33,4 @@ cp init.lua ~/.hammerspoon/
 mkdir ~/.config
 mkdir ~/.config/karabiner
 cp karabiner.json ~/.config/karabiner/
-
+cp starship.toml ~/.config/starship.toml
