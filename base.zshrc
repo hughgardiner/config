@@ -13,6 +13,8 @@ alias reset='git checkout -- .'
 alias commit='git add . && git commit -m '
 alias diff='git diff --color-moved'
 alias latest='git pull && code .'
+alias delete-branches='git fetch --prune && git branch -r | awk '\''{print $1}'\'' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '\''{print $1}'\'' | xargs git branch -D'
+alias lb='git branch --sort="-committerdate" --format="%(color:green)%(committerdate:relative)%(color:reset) %(refname:short)" | head -n 10'
 
 # Docker Shortcuts
 alias dcd='docker-compose down'
