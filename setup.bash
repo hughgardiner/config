@@ -34,3 +34,10 @@ mkdir ~/.config
 mkdir ~/.config/karabiner
 cp karabiner.json ~/.config/karabiner/
 cp starship.toml ~/.config/starship.toml
+
+# NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+
+# VSCode Vim
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
