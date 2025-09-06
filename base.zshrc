@@ -21,15 +21,14 @@ alias dcd='docker-compose down'
 alias dcb='docker-compose build --pull'
 alias dcu='docker-compose up'
 alias dc='docker-compose'
-alias dke='docker exec -it `docker-compose ps -q web`'
 alias dps='docker ps'
 alias dsa='docker stop $(docker ps -q)'
-alias dse='docker stop $(docker ps -q -f "name=firefox" -f "name=selenium" -f "name=elasticsearch" -f "name=postgres")'
 
 # Load Git completion
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
 fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
+<<<<<<< HEAD
 
 eval "$(starship init zsh)"
 
@@ -38,3 +37,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 cd ~/dev
+=======
+>>>>>>> 3c7d8f8 (app updates)

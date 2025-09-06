@@ -7,16 +7,12 @@ hs.notify.new({title="Hammerspoon", informativeText="Config loaded"}):send()
 local applicationHotkeys = {
   a = 'Arc',
   c = 'ChatGPT',
-  d = 'Calendar',
   f = 'Finder',
-  g = 'DataGrip',
-  i = 'Insomnia',
   n = 'Notes',
   p = 'Spotify',
   s = 'Slack',
-  t = 'iTerm',
-  v = 'Visual Studio Code',
-  z = 'zoom.us'
+  t = 'Warp',
+  v = 'Cursor',
 }
 for key, app in pairs(applicationHotkeys) do
   hs.hotkey.bind(hyper, key, function()
@@ -25,6 +21,6 @@ for key, app in pairs(applicationHotkeys) do
 end
 
 hs.hotkey.bind(hyper, '1', function()
-  local itermSuccess = hs.application.launchOrFocus('iTerm')
-  local vsCodeSuccess = hs.application.launchOrFocus('Visual Studio Code')
+  local itermSuccess = hs.application.launchOrFocus('Warp')
+  local vsCodeSuccess = hs.application.launchOrFocus('Cursor')
 end)

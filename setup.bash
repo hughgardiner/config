@@ -18,6 +18,9 @@ brew install --cask figma
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
 brew install --cask spotify
+brew install --cask warp
+brew install --cask cursor
+brew install --cask arc
 
 # Starship Install
 curl -sS https://starship.rs/install.sh | sh
