@@ -8,12 +8,9 @@
 # ./setup.bash
 
 # Homebrew Install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/hughgardiner/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Application Install
-brew install --cask visual-studio-code
 brew install --cask figma
 brew install --cask karabiner-elements
 brew install --cask hammerspoon
@@ -23,7 +20,7 @@ brew install --cask cursor
 brew install --cask arc
 
 # Starship Install
-curl -sS https://starship.rs/install.sh | sh
+# curl -sS https://starship.rs/install.sh | sh
 
 # Setup ZSH
 cp base.zshrc ~/.zshrc
@@ -36,11 +33,4 @@ cp init.lua ~/.hammerspoon/
 mkdir ~/.config
 mkdir ~/.config/karabiner
 cp karabiner.json ~/.config/karabiner/
-cp starship.toml ~/.config/starship.toml
-
-# NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-
-# VSCode Vim
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-
+# cp starship.toml ~/.config/starship.toml
