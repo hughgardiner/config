@@ -7,12 +7,16 @@ hs.notify.new({title="Hammerspoon", informativeText="Config loaded"}):send()
 local applicationHotkeys = {
   a = 'Arc',
   c = 'ChatGPT',
+  d = 'Figma',
   f = 'Finder',
+  g = 'DataGrip',
+  -- i = 'Insomnia',
   n = 'Notes',
   p = 'Spotify',
   s = 'Slack',
   t = 'Warp',
   v = 'Cursor',
+  z = 'Google Meet'
 }
 for key, app in pairs(applicationHotkeys) do
   hs.hotkey.bind(hyper, key, function()
